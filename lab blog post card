@@ -1,0 +1,88 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="blog-post-card">
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="Scenic cover photo with mountains and sky" class="post-img">
+    
+    <div class="post-content">
+      <h2 class="post-title">Exploring the Mountains</h2>
+      <p class="post-excerpt">
+        Discover the beauty and challenges of hiking through mountain trails, from breathtaking views to hidden dangers along the path.
+      </p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Blog post card container */
+.blog-post-card {
+  background-color: white;
+  border-radius: 12px;
+  width: 350px;   /* you can adjust this */
+  text-align: left; /* change to center if preferred */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* ensures rounded corners apply to image */
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Post image */
+.post-img {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Content inside the card */
+.post-content {
+  padding: 16px;
+}
+
+/* Post title */
+.post-title {
+  color: #2c3e50;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+/* Post excerpt */
+.post-excerpt {
+  color: #555;
+  margin: 10px 0 20px 0;
+  line-height: 1.5;
+}
+
+/* Read more button-style link */
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;                /* text color */
+  background-color: #3498db;  /* button background */
+  margin: 10px 0;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.read-more:hover {
+  background-color: #2980b9;
+}
+
+
+** end of styles.css **
+
