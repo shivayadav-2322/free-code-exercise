@@ -1,0 +1,115 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Cover</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="magazine-cover">
+
+    <!-- Title -->
+    <header class="title">
+      <h1>Magazine Weekly</h1>
+    </header>
+
+    <!-- Feature Article -->
+    <section class="feature-article">
+      <h2>Feature Article</h2>
+      <p>This is the main feature article content of the magazine cover.</p>
+    </section>
+
+    <!-- Small Article 1 -->
+    <section class="small-article1">
+      <h2>Small Article 1</h2>
+      <p>Some brief content for the first small article.</p>
+    </section>
+
+    <!-- Small Article 2 -->
+    <section class="small-article2">
+      <h2>Small Article 2</h2>
+      <p>Some brief content for the second small article.</p>
+    </section>
+
+    <!-- Cover Image -->
+    <section class="cover-image">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/cover.jpg" alt="Magazine cover image">
+    </section>
+
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.magazine-cover {
+  display: grid;
+  grid-template-areas: 
+    "title title title"
+    "feature-article feature-article cover-image"
+    "small-article1 small-article2 cover-image";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 10px; /* fixed */
+  width: 90vw;
+  margin: 20px auto;
+}
+
+/* Title */
+.title {
+  grid-area: title;
+  background: lightcoral;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Feature Article */
+.feature-article {
+  grid-area: feature-article; /* fixed */
+  background: lightgoldenrodyellow;
+  padding: 15px;
+}
+
+/* Small Articles */
+.small-article1 {
+  grid-area: small-article1;
+  background: lightblue;
+  padding: 15px;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+  background: lightgreen;
+  padding: 15px;
+}
+
+/* Cover Image */
+.cover-image {
+  grid-area: cover-image; /* fixed */
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+** end of styles.css **
+
