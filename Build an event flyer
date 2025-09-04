@@ -1,0 +1,77 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Flyer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/event.jpg" alt="Event Banner">
+    <h1>Annual Community Festival</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Live Music & Entertainment</h2>
+      <p>Enjoy performances from local bands, dance groups, and special guest artists throughout the day.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Food & Activities</h2>
+      <p>Explore a variety of food trucks, art booths, and family-friendly activities for all ages.</p>
+    </section>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Body styling */
+body {
+  padding: 50px 0;
+  margin: 0 auto; /* top/bottom = 0, left/right = auto for centering */
+  width: 80vw; /* relative to viewport width */
+  min-height: calc(100vh - 100px); /* full viewport height minus top+bottom padding (50px + 50px) */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header */
+header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+header h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+/* Main sections */
+section {
+  width: 90%;
+  margin: 20px auto;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* Horizontal rule */
+hr {
+  width: 90%;
+  margin: 30px auto;
+}
+
+
+** end of styles.css **
+
