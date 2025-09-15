@@ -1,0 +1,87 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earth and Moon Orbit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="space">
+    <div class="earth"></div>
+    <div class="orbit">
+      <div class="moon"></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* 1. Center body contents */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* 2–4. Space container */
+.space {
+  width: 200px;   /* requirement #3 */
+  height: 200px;
+  position: relative; /* requirement #4 */
+}
+
+/* 5–10. Earth */
+.earth {
+  width: 100px;     /* requirement #7 */
+  height: 100px;
+  position: absolute; /* requirement #8 */
+  top: 50%;          /* requirement #9 */
+  left: 50%;
+  transform: translate(-50%, -50%); /* requirement #10 */
+  background-color: blue;           /* requirement #22 */
+  border-radius: 50%;               /* requirement #23 */
+}
+
+/* 11–15. Orbit */
+.orbit {
+  width: 200px;   /* requirement #13 */
+  height: 200px;
+  position: absolute; /* requirement #14 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* requirement #15 */
+  animation: orbit 5s linear infinite; /* requirement #33 */
+}
+
+/* 16–21. Moon */
+.moon {
+  width: 30px;     /* requirement #17 */
+  height: 30px;
+  position: absolute; /* requirement #18 */
+  top: 0;             /* requirement #19 */
+  left: 50%;          /* requirement #20 */
+  transform: translateX(-50%); /* requirement #21 */
+  background-color: gray;      /* requirement #24 */
+  border-radius: 50%;          /* requirement #25 */
+}
+
+/* 26–32. Orbit animation */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%); /* requirement #30 */
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%); /* requirement #32 */
+  }
+}
+
+
+** end of styles.css **
