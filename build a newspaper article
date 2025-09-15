@@ -1,0 +1,95 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Article</title>
+     <link rel="stylesheet" href="styles.css">
+  </head>
+ <body>
+  <div class="newspaper">
+    <div class="name">The Daily Chronicle</div>
+    <div class="date">September 15, 2025</div>
+    <div class="headline">Breakthrough in Renewable Energy</div>
+    <div class="sub-headline">Scientists develop a new solar cell with record efficiency</div>
+    <div class="author">By Jane Doe</div>
+    <p class="text">
+      Researchers at the International Energy Institute have unveiled a groundbreaking solar cell design that promises to reshape the future of clean energy. The innovative technology boasts unprecedented efficiency rates, surpassing the limits of conventional photovoltaic cells.
+    </p>
+    <p class="text">
+      Experts believe this discovery could accelerate the global transition to renewable energy, reducing dependence on fossil fuels and mitigating the effects of climate change. Governments and private investors are already showing interest in scaling the technology for widespread use.
+    </p>
+  </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Root font size */
+html {
+  font-size: 24px;
+}
+
+/* Newspaper container */
+.newspaper {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Newspaper name */
+.name {
+  font-size: 2rem;
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+/* Date */
+.date {
+  margin-bottom: 10px;
+  font-size: 1em; /* inherits 16px from .newspaper */
+}
+
+/* Headline */
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Sub-headline */
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Author */
+.author {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Text paragraphs */
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+  margin-bottom: 15px;
+}
+
+/* First letter styling */
+.text::first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+
+** end of styles.css **
+
