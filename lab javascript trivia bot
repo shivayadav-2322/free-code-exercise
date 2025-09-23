@@ -1,0 +1,29 @@
+** start of script.js **
+
+console.log("Hello! I'm your coding fun fact guide!");
+
+let botName = "New Bot";
+let botLocation = "FreeCodeCamp";
+let favoriteLanguage = "Coding";
+
+console.log("My name is " + botName + " and I live on " + botLocation + ".");
+console.log("My favorite programming language is " + favoriteLanguage + ".");
+
+// First fact
+let codingFact = "Did you know that " + favoriteLanguage + " is fun to learn?";
+console.log(codingFact);
+
+// Second fact
+codingFact = favoriteLanguage + " helps you solve problems in creative ways.";
+console.log(codingFact);
+
+// Third fact
+codingFact = "Many people around the world enjoy " + favoriteLanguage + " every day!";
+console.log(codingFact);
+
+// Goodbye message
+console.log("It was fun sharing these facts with you. Goodbye! - " + botName + " from " + botLocation + ".");
+
+
+** end of script.js **
+
